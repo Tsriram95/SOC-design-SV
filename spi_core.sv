@@ -5,7 +5,7 @@
 // 
 // Create Date: 07/13/2024 01:02:27 PM
 // Design Name: 
-// Module Name: spi-core-instance
+// Module Name: spi-core
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -23,7 +23,7 @@
 module spi (
     input logic clk, reset,
     input logic [7:0] din,
-    input logic [15:0] dvsr,
+    input logic [15:0] dvsr,                        // clock divisor
     input logic start, cpol, cpha,
     output logic [7:0] dout,
     output logic spi_done_tick, ready,
